@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fan animation</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="animation-container">
+		<img src="images/fan-wings.png" id="fan-wings" height="250px" width="250px">
+		<img src="images/fan-stand.png" id="fan-stand" height="400px" width="160px">
+		<div class="fan-controller-container">
+			<h1 class="fan-controller-header">Fan Controller</h1>
+			<button class="reverse-fan-direction-btn fan-switch-btn" onclick="reverseFanDirection();">Reverse</button>
+			<button class="fan-switch-on-btn fan-switch-btn" onclick="startFan();">ON</button>
+			<button class="fan-switch-off-btn fan-switch-btn" onclick="stopFan();">OFF</button>
+			<div class="speed-regulator">
+				<h2 class="speed-regulator-header">Speed Regulator</h2>
+				<button class="speed-1 speed-1-indi speed-btn" onclick="speed1();">1</button>
+				<button class="speed-2 speed-2-indi speed-btn" onclick="speed2();">2</button>
+				<button class="speed-3 speed-3-indi speed-btn" onclick="speed3();">3</button>
+				<button class="speed-4 speed-4-indi speed-btn" onclick="speed4();">4</button>
+				<button class="speed-5 speed-5-indi speed-btn" onclick="speed5();">5</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="index.js"></script>
+</body>
+</html>
